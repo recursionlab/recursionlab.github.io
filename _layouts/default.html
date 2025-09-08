@@ -21,8 +21,8 @@
 
     <!-- For all browsers -->
     <!--  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Heebo:100,300,400,500,700,800,900" rel="stylesheet">  -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
     <meta http-equiv="cleartype" content="on">
     {% if site.tags != "" %}
   {% include collecttags.html %}
@@ -38,11 +38,11 @@
         <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. <a href="https://twitter.com/migftw" rel="nofollow">@migftw</a> <span class="page__footer-heart"><i class="fa fa-twitter" aria-hidden="true"></i></span>. <a href="https://github.com/migftw/sparrowx">SparrowX</a> built on top of <a href="https://github.com/lingxz/sparrow">@sparrow</a>.</div>
       </footer>
     </div>
-     <script src="{{ '/compressed.js' | absolute_url }}"></script>
-    <!--<script src="{{ '/assets/js/plugins/jquery-1.12.4.min.js' | absolute_url }}"></script>
-    <script src="{{ '/assets/js/plugins/rrssb.min.js' | absolute_url }}"></script>
-    <script src="{{ '/assets/js/slimmenu.js' | absolute_url }}"></script>
-    <script src="{{ '/assets/js/main.js' | absolute_url }}"></script> -->
+     <script src="{{ '/compressed.js' | relative_url }}"></script>
+    <!--<script src="{{ '/assets/js/plugins/jquery-1.12.4.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/plugins/rrssb.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/slimmenu.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script> -->
     {% include analytics.html %}
 
   </body>
