@@ -28,9 +28,9 @@ $type-size-8                : 0.625em !default;  // ~10px
 /*
    Colors
    ========================================================================== */
-
+$brand-color                : #22d3ee !default; // Recursion Lab accent
 $green                      : mix(#000, #c0392b, 15%);
-$theme-color                : $green;
+$theme-color                : $brand-color !default;
 $gray                       : #7a8288 !default;
 
 $body-color                 : #fff !default;
