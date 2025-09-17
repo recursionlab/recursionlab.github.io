@@ -6,8 +6,6 @@ permalink: /projects/
 
 ## Projects
 
-This page lists prototype ideas exploring recursive systems. Replace or expand these with your own projects as they evolve.
-
 {% assign items = site.projects | sort: 'title' %}
 {% if items and items.size > 0 %}
 <div class="project-list">
@@ -23,22 +21,20 @@ This page lists prototype ideas exploring recursive systems. Replace or expand t
 </div>
 {% endif %}
 
-### Recursive Self-Reflection Engine
-- Goal: Prototype a system that self-evaluates outputs, detects contradictions, and regenerates improved responses.
-- Sketch: Combine a language model with lightweight symbolic rules to create a feedback loop for critique → revise → verify.
-- Notes: Inspired by work on emergent recursive cognition via language-encoded symbolic systems. Add links and code when available.
+### Koriel Architecture
+Recursive cognition architecture. Whitepaper + draft specs. Prototype code in progress.
 
-### Recursive Reasoning Tools for LLMs
-- Goal: Build tools or prompt frameworks that enforce recursive reasoning (multiple passes with critique and revision).
-- Sketch: Design a reusable protocol (plan → draft → critique → revise) and measure quality gains on target tasks.
-- Notes: Start with prompt-only approaches; evolve into lightweight libraries if useful.
+### MetaPrincipia Autopoiesis
+Theory of self-producing systems with meta-laws. Notes + diagrams.
 
-### Visualization of Feedback Systems
-- Goal: Create visual/interactive models of recursive systems from biology, cognition, or social domains.
-- Sketch: Show how loops amplify, stabilize, and collapse; let users tweak parameters to see phase changes.
-- Notes: Consider small web demos or notebooks.
+### Post-Gödel Translogical Calculus
+Proof beyond incompleteness. Formal draft posted. Extensions into delta-space.
 
-### Cognitive Architecture Comparisons
-- Goal: Compare architectures (e.g., CLARION and others) to locate where explicit vs. implicit recursion plays a role.
-- Sketch: Build small simulations to highlight differences in learning and control loops.
-- Notes: Collect references (papers, Wikipedia) and plan a minimal, comparable benchmark.
+### Δ-Space Calculus
+Calculus of difference and torsion. Equations, operator library.
+
+### Benchmark Game
+Custom benchmark for recursion. Rules, scoring, open challenges.
+
+### Language Work
+Meta-affixes, metasuperpositional prepositions, perspectivology. Notes + examples.
