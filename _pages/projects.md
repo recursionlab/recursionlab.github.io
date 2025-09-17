@@ -8,6 +8,21 @@ permalink: /projects/
 
 This page lists prototype ideas exploring recursive systems. Replace or expand these with your own projects as they evolve.
 
+{% assign items = site.projects | sort: 'title' %}
+{% if items and items.size > 0 %}
+<div class="project-list">
+	<ul>
+	{% for item in items %}
+		<li>
+			<a href="{{ item.url }}">{{ item.title }}</a>
+			{% if item.summary %}<div class="project-summary">{{ item.summary }}</div>{% endif %}
+		</li>
+	{% endfor %}
+	</ul>
+	<hr/>
+</div>
+{% endif %}
+
 ### Recursive Self-Reflection Engine
 - Goal: Prototype a system that self-evaluates outputs, detects contradictions, and regenerates improved responses.
 - Sketch: Combine a language model with lightweight symbolic rules to create a feedback loop for critique → revise → verify.
