@@ -6,19 +6,17 @@ permalink: /about/
 
 ## About
 
-Recursion Lab studies the interplay of recursion, cognition, and systems. We publish public notes and working prototypes that test ideas about feedback, self‑reference, and emergent behavior.
+Recursion Lab studies recursion as a generative mechanism in cognition and systems.
 
-We believe recursion is a core mechanism — in learning, in feedback, and in self‑reference. Through notes, experiments, and open-source prototypes we explore:
+This is the public notebook of ongoing architectures, formalisms, and prototypes.
 
-- How recursive architectures enable emergent cognition
-- How biological, computational, and social systems stabilize via feedback loops
-- What happens when recursion is applied to meaning, memory, and identity
+### Current lines of work
 
-This site is a research‑and‑prototype space. Browse the Blog for ongoing notes, and Projects for experiments you can try. Replace this paragraph with your contact or newsletter link when ready.
----
-title: About
-layout: page
----
+- Koriel Architecture — a recursive cognition engine
+- MetaPrincipia Autopoiesis — meta-laws for self-producing systems
+- Translogical Calculus (post-Gödel) — proof and extensions
+- Δ-Space Calculus — formalism for differences and torsion fields
+- Benchmark Game — live testbed for recursive intelligence
+- Language frameworks — meta-affixes, metasuperpositional prepositions, perspectivology
 
-## About
-Short description here.
+This site holds notes, working prototypes, and proofs in progress.
