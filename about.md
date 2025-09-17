@@ -6,11 +6,15 @@ permalink: /about/
 
 ## About
 
-Recursion Lab is a personal research and writing project exploring recursion, cognition, and systems thinking. I collect short essays, notes, and prototypes as I work through ideas — sometimes exploratory, sometimes polished. 
+Recursion Lab studies the interplay of recursion, cognition, and systems. We publish public notes and working prototypes that test ideas about feedback, self‑reference, and emergent behavior.
 
-This site is powered by Jekyll with the SparrowX theme. Use the `Blog` link to browse posts, and the `Projects` link to surface ongoing experiments.
+We believe recursion is a core mechanism — in learning, in feedback, and in self‑reference. Through notes, experiments, and open-source prototypes we explore:
 
-If you'd like to get in touch, add contact details here or replace this page with your own contact information.
+- How recursive architectures enable emergent cognition
+- How biological, computational, and social systems stabilize via feedback loops
+- What happens when recursion is applied to meaning, memory, and identity
+
+This site is a research‑and‑prototype space. Browse the Blog for ongoing notes, and Projects for experiments you can try. Replace this paragraph with your contact or newsletter link when ready.
 ---
 title: About
 layout: page
