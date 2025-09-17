@@ -177,3 +177,27 @@ The color schemes and fonts can also be customized through scss, by editing the 
 
 - Base theme sparrow by [lingxz](https://github.com/lingxz/sparrow)
 - Icon made by [Freepik](https://www.freepik.com/) from www.flaticon.com 
+
+## Local development
+
+To preview the site locally you can use Bundler and Jekyll. From the repository root run:
+
+```bash
+# install gems
+bundle install
+
+# build the site and serve locally
+bundle exec jekyll serve --livereload
+```
+
+Open http://127.0.0.1:4000 in your browser to preview changes. When creating posts, add files to `_posts/` with a filename like `YYYY-MM-DD-title.md` and appropriate front matter.
+
+See `_qa/pagination-snippet.txt` for a quick build verification note I added earlier.
+
+### Drafts
+
+Place in-progress posts in the `_drafts/` folder (no date in filename). To preview drafts locally, run:
+
+```bash
+bundle exec jekyll serve --drafts --livereload
+```
