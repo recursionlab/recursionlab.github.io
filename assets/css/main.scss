@@ -44,3 +44,9 @@ $susy: (
 @import "slimmenu";
 @import "post";
 @import "page";
+
+/* Avoid horizontal overflow for math renderers */
+.katex-display, .MathJax, .mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}

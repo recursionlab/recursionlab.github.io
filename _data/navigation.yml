@@ -3,5 +3,7 @@ main:
     url: /blog/
   - title: "Projects"
     url: /projects/
+  - title: "Codex"
+    url: /codex/
   - title: "About"
     url: /about/
