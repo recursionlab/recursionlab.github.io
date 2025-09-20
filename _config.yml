@@ -85,9 +85,6 @@ paginate_path: "/blog/page:num/"
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 collections:
-  poetry:
-    output: true
-    permalink: /:collection/:title/
   projects:
     output: true
     permalink: /projects/:name/
@@ -123,10 +120,4 @@ defaults:
       comments: true
       share: true
   # _poetry
-  - scope:
-      path: ""
-      type: poetry
-    values:
-      layout: post
-      share: false
   # end defaults
