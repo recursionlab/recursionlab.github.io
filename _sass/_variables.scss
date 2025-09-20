@@ -28,8 +28,8 @@ $type-size-8                : 0.625em !default;  // ~10px
 /*
    Colors
    ========================================================================== */
-/* Cathedral primary (gold) mapped for legacy SCSS usage */
-$brand-color                : hsl(43, 74%, 66%) !default; // Cathedral primary
+/* Cathedral primary (royal purple) mapped for legacy SCSS usage */
+$brand-color                : hsl(262, 65%, 62%) !default; // Cathedral primary
 $green                      : mix(#000, #c0392b, 15%);
 $theme-color                : $brand-color !default;
 $gray                       : #7a8288 !default; // neutral gray (kept light-theme friendly)
@@ -44,7 +44,7 @@ $border-color               : #b2b2b2 !default; // border
 
 /* links */
 $link-color                 : $theme-color !default;
-$link-color-hover           : mix(#fff, $link-color, 40%) !default; 
+$link-color-hover           : mix(#fff, $link-color, 25%) !default; 
 $link-color-visited         : mix(#000, $link-color, 25%) !default;
 $entry-link-color           : $text-color !default;
 $entry-link-color-hover     : $theme-color !default;

@@ -68,7 +68,8 @@ body {
   font-family: $global-font-family;
   line-height: 1.7;
   color: $text-color;
-  border-top: 3px solid $theme-color;
+  /* Removed top border stripe for cleaner Cathedral aesthetic */
+  // border-top: 3px solid $theme-color;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */

@@ -20,8 +20,8 @@ sitemap:
   --popover: 240 15% 10%;
   --popover-foreground: 35 15% 85%;
 
-  /* Sacred geometry gold accent */
-  --primary: 43 74% 66%;
+  /* Cathedral primary (royal purple) */
+  --primary: 262 65% 62%;
   --primary-foreground: 240 15% 8%;
 
   /* Deep stone secondary */
@@ -32,7 +32,7 @@ sitemap:
   --muted: 240 15% 12%;
   --muted-foreground: 35 8% 60%;
 
-  /* Illuminated manuscript accent */
+  /* Accent (deeper purple) */
   --accent: 260 60% 50%;
   --accent-foreground: 35 15% 85%;
 
@@ -41,16 +41,16 @@ sitemap:
 
   --border: 240 20% 18%;
   --input: 240 20% 15%;
-  --ring: 43 74% 66%;
+  --ring: 262 65% 62%;
 
   /* Sacred geometry gradients */
   --gradient-cathedral: linear-gradient(135deg, hsl(240 15% 8%), hsl(240 20% 12%));
-  --gradient-sacred: linear-gradient(45deg, hsl(43 74% 66%), hsl(260 60% 50%));
+  --gradient-sacred: linear-gradient(45deg, hsl(262 65% 62%), hsl(260 60% 50%));
   --gradient-knowledge: linear-gradient(180deg, hsl(240 12% 8%), hsl(240 8% 6%));
   
   /* Mystical shadows */
   --shadow-cathedral: 0 10px 40px -10px hsl(240 15% 4% / 0.8);
-  --shadow-sacred: 0 0 30px hsl(43 74% 66% / 0.3);
+  --shadow-sacred: 0 0 30px hsl(262 65% 62% / 0.3);
   --shadow-deep: 0 20px 60px -20px hsl(240 15% 2% / 0.9);
 
   /* Geometric animation */
@@ -200,3 +200,36 @@ p>code, a>code, li>code, figcaption>code, td>code {
 blockquote { background: hsl(var(--muted)); border-color: hsl(var(--border)); }
 hr { border-top-color: hsl(var(--border)); }
 table td { border-bottom-color: hsl(var(--border)); }
+
+/* Cathedral hero section */
+.hero-cathedral {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-deep);
+  background: var(--gradient-cathedral);
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+}
+.hero-cathedral__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: saturate(110%) contrast(95%) brightness(75%);
+}
+.hero-cathedral__overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient( circle at 30% 20%, rgba(0,0,0,.35), transparent 50%),
+              linear-gradient( to bottom, rgba(0,0,0,.6), rgba(0,0,0,.2) 40%, rgba(0,0,0,.6));
+}
+.hero-cathedral__content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  color: hsl(var(--foreground));
+}
+.hero-cathedral__title { font-size: clamp(1.8rem, 3vw, 2.4rem); margin: 0 0 .25rem; color: hsl(var(--primary)); }
+.hero-cathedral__subtitle { margin: 0; opacity: .9; }
