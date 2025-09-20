@@ -8,6 +8,28 @@ sitemap:
    ========================================================================== */
 
 @import "variables";
+/* Central color tokens via CSS custom properties (placeholders to be replaced with Cathedral) */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 13%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 13%;
+  --primary: 188 78% 54%; /* matches current $brand-color #22d3ee */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 9% 46%; /* from $gray */
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 16% 93%;
+  --muted-foreground: 220 9% 46%;
+  --accent: 188 78% 54%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 3 63% 47%; /* approx #c0392b base */
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 70%; /* ~$border-color */
+  --input: 0 0% 70%;
+  --ring: 188 78% 54%;
+}
 
 /*
    Vendor

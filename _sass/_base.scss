@@ -13,8 +13,8 @@
 p>code, a>code, li>code, figcaption>code, td>code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    background: #f2f3f3;
-    border: 1px solid #b2b2b2;
+  background: $code-background-color;
+  border: 1px solid $border-color;
     border-radius: 2px;
     font-size: 0.8em;
 }
@@ -33,18 +33,16 @@ div.highlighter-rouge .highlight, figure.highlight .highlight {
     font-size: .8em;
 }
 
-table td {
-    border-bottom: solid 2px #e6e6e6;
-}
+table td { border-bottom: solid 2px mix(#fff, $border-color, 60%); }
 
 .button-dark {
   display: inline-block;
   padding: 12px 24px;
   border-radius: 6px;
-  border: 2px solid #a33025;
+  border: 2px solid hsl(var(--destructive));
   font-weight: bold;
-  background: #F2F3F3;
-  color: #a33025;
+  background: hsl(var(--muted));
+  color: hsl(var(--destructive));
 }
 
 @mixin clearfix {
@@ -166,11 +164,11 @@ blockquote:before {
   position: absolute;
   left: -0.2em;
   top: -0.2em;
-  color: #7a7a7a;
+  color: mix(#fff, $text-color, 50%);
 }
 
 blockquote cite {
-  color: #999999;
+  color: mix(#fff, $text-color, 60%);
   font-size: 0.9em;
   display: block;
   margin-top: 5px;
@@ -210,9 +208,9 @@ tt, code, kbd, samp, pre {
 
 pre {
   overflow-x: auto;
-    border-left: solid 0 #52d841;
-    color: #4fff38;
-    background: #404040;
+    border-left: solid 0 $border-color;
+    color: $text-color;
+    background: $code-background-color;
     line-height: 1.4;
     font-size: .8em;
     margin: 0 0 1.7em;
@@ -333,10 +331,7 @@ figcaption {
     -webkit-transition: $global-transition;
     transition: $global-transition;
 
-    &:hover {
-      color: #000;
-      border-bottom-color: #000;
-    }
+    &:hover { color: $link-color-hover; border-bottom-color: $link-color-hover; }
   }
 }
 

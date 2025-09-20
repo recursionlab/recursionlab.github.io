@@ -28,17 +28,17 @@ $type-size-8                : 0.625em !default;  // ~10px
 /*
    Colors
    ========================================================================== */
-$brand-color                : #22d3ee !default; // Recursion Lab accent
+$brand-color                : #22d3ee !default; // Recursion Lab accent (Cathedral primary placeholder)
 $green                      : mix(#000, #c0392b, 15%);
 $theme-color                : $brand-color !default;
-$gray                       : #7a8288 !default;
+$gray                       : #7a8288 !default; // Cathedral secondary placeholder
 
-$body-color                 : #fff !default;
-$background-color           : #fff !default;
-$code-background-color      : mix(#fff, $gray, 90%) !default;
-$blockquote-background-color: mix(#fff, $gray, 90%) !default;
-$text-color                 : #404040 !default;
-$border-color               : #b2b2b2 !default;
+$body-color                 : #404040 !default; // foreground
+$background-color           : #fff !default;    // background
+$code-background-color      : mix(#fff, $gray, 90%) !default; // muted
+$blockquote-background-color: mix(#fff, $gray, 90%) !default; // muted
+$text-color                 : #404040 !default; // foreground
+$border-color               : #b2b2b2 !default; // border
 
 
 /* links */

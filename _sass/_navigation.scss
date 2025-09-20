@@ -89,12 +89,12 @@
       }
 
       &.current {
-        color: #fff;
+        color: hsl(var(--primary-foreground));
         background: $theme-color;
       }
 
       &.disabled {
-        color: mix(#fff, $gray, 75%);
+        color: hsl(var(--muted-foreground));
         pointer-events: none;
         cursor: not-allowed;
       }
