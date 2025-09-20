@@ -28,10 +28,11 @@ $type-size-8                : 0.625em !default;  // ~10px
 /*
    Colors
    ========================================================================== */
-$brand-color                : #22d3ee !default; // Recursion Lab accent (Cathedral primary placeholder)
+/* Cathedral primary (gold) mapped for legacy SCSS usage */
+$brand-color                : hsl(43, 74%, 66%) !default; // Cathedral primary
 $green                      : mix(#000, #c0392b, 15%);
 $theme-color                : $brand-color !default;
-$gray                       : #7a8288 !default; // Cathedral secondary placeholder
+$gray                       : #7a8288 !default; // neutral gray (kept light-theme friendly)
 
 $body-color                 : #404040 !default; // foreground
 $background-color           : #fff !default;    // background

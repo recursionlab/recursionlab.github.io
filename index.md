@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Recursion Lab
-description: Public notes and working prototypes on recursion, cognition, and systems. We build contradiction-aware recursive engines: Koriel-ASI, Field Anatomy, ℛℐΔ, Meta-ToolOS.
+description: "Public notes and working prototypes on recursion, cognition, and systems. We build contradiction-aware recursive engines: Koriel-ASI, Field Anatomy, ℛℐΔ, Meta-ToolOS."
 permalink: /
 ---
 

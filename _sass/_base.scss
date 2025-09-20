@@ -4,9 +4,9 @@
 
 %tab-focus {
   /* Default*/
-  outline: thin dotted #f89406;
+  outline: thin dotted $theme-color;
   /* Webkit*/
-  outline: 5px auto #f89406;
+  outline: 5px auto $theme-color;
   outline-offset: -2px;
 }
 
@@ -24,9 +24,9 @@ div.highlighter-rouge .highlight, figure.highlight .highlight {
 }
 
 /* #mastheadbackground {
-    height: 155px;
-    margin-bottom: -175px;
-    background-color: #F2F3F3;
+  height: 155px;
+  margin-bottom: -175px;
+  background-color: $code-background-color;
 }*/
 
 .highligher-rouge {
