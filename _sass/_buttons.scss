@@ -11,7 +11,7 @@
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
-  color: #fff !important;
+  color: hsl(var(--primary-foreground)) !important;
   font-family: $caption-font-family;
   text-align: center;
   text-decoration: none;
@@ -46,7 +46,7 @@
   /* light outline */
 
   &--light-outline {
-    border: 1px solid #fff !important; /* override*/
+  border: 1px solid hsl(var(--primary-foreground)) !important; /* override*/
     background-color: transparent;
   }
 
