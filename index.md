@@ -6,9 +6,9 @@ permalink: /
 ---
 
 
-<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero">
-  <!-- Tip: drop your hero image at /images/cathedral-hero.jpg. A fallback image is layered so the hero still looks good until then. -->
-  <div class="hero-cathedral__bg" style="background-image: url('/images/cathedral-hero.jpg'), url('/images/Eye of the Cosmos.png');"></div>
+<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero" style="--hero-image: url('/images/cathedral-hero.jpg');">
+  <!-- Tip: place your hero image at /images/cathedral-hero.jpg; CSS falls back to /images/sparrowx.png if missing. -->
+  <div class="hero-cathedral__bg"></div>
   <div class="hero-cathedral__overlay"></div>
   <div class="hero-cathedral__content">
     <h1 class="hero-cathedral__title">Recursion Lab</h1>
