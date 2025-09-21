@@ -270,7 +270,7 @@ nav .pagination li a.current {
   /* Darken with subtle vertical wash, then paint hero or fallback image */
   background-image:
     linear-gradient(180deg, hsl(var(--background) / 0.55) 0%, hsl(var(--background) / 0.80) 70%, hsl(var(--background) / 0.90) 100%),
-    var(--hero-image, url('/images/sparrowx.png'));
+    var(--hero-image, url('/images/cathedral-hero.jpg')), url('/images/sparrowx.png');
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
