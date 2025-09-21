@@ -6,8 +6,8 @@ permalink: /
 ---
 
 
-<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero" style="--hero-image: url('/images/sparrowx.png');">
-  <!-- Tip: swap to /images/cathedral-hero.jpg once added -->
+<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero" style="--hero-image: url('/images/Eye of the Cosmos.png');">
+  <!-- Tip: swap to /images/cathedral-hero.jpg once added; fallback remains sparrowx.png in CSS -->
   <div class="hero-cathedral__bg"></div>
   <div class="hero-cathedral__overlay"></div>
   <div class="hero-cathedral__content">
