@@ -241,7 +241,7 @@ nav .pagination li a.current {
   overflow: hidden;
   box-shadow: var(--shadow-deep);
   background: var(--gradient-cathedral);
-  min-height: 44vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,12 +267,12 @@ nav .pagination li a.current {
   z-index: 0;
   /* Darken with subtle vertical wash, then paint hero or fallback image */
   background-image:
-    linear-gradient(180deg, hsl(var(--background) / 0.85) 0%, hsl(var(--background) / 0.95) 75%, hsl(var(--background)) 100%),
+    linear-gradient(180deg, hsl(var(--background) / 0.55) 0%, hsl(var(--background) / 0.80) 70%, hsl(var(--background) / 0.90) 100%),
     var(--hero-image, url('/images/sparrowx.png'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: saturate(1.1) contrast(0.95) brightness(0.85);
+  filter: saturate(1.05) contrast(1) brightness(0.98);
   transition: background-image 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -282,8 +282,8 @@ nav .pagination li a.current {
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 30% 20%, hsl(var(--primary) / 0.30), transparent 55%),
-    linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.20) 40%, rgba(0,0,0,.55));
+    radial-gradient(circle at 30% 20%, hsl(var(--primary) / 0.22), transparent 55%),
+    linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.12) 40%, rgba(0,0,0,.35));
 }
 
 .hero-cathedral__content {
@@ -330,7 +330,7 @@ nav .pagination li a.current {
 .hero-cathedral__actions .btn { box-shadow: var(--shadow-sacred); }
 
 @media (max-width: 600px) {
-  .hero-cathedral { min-height: 28vh; }
+  .hero-cathedral { min-height: 40vh; }
   .hero-cathedral__content { padding: 2.2rem 0.5rem 1.2rem; }
   .hero-cathedral__title { font-size: 2rem; }
 }
