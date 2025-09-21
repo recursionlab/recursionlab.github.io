@@ -180,6 +180,7 @@ html { scroll-behavior: smooth; }
 
 /* Theme overrides to adopt Cathedral palette */
 body { background: hsl(var(--background)); color: hsl(var(--foreground)); }
+/* Force Cathedral purple for all anchors, overriding vendor/theme */
 a { color: hsl(var(--primary)) !important; }
 a:hover, a:focus { color: hsl(var(--accent)) !important; }
 /* Remove legacy gold top border stripe from remote theme */
@@ -227,51 +228,96 @@ nav .pagination li a.current {
   overflow: hidden;
   box-shadow: var(--shadow-deep);
   background: var(--gradient-cathedral);
-  min-height: 380px;
+  min-height: 44vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  isolation: isolate;
 }
+
 .hero-cathedral::before {
   /* faint starfield speckles */
   content: "";
-  position: absolute; inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
   background-position: 20% 10%, 80% 60%;
   background-size: 120px 120px, 160px 160px;
   pointer-events: none;
 }
+
 .hero-cathedral__bg {
   position: absolute;
   inset: 0;
-  /* Robust fallback: allow page to set --hero-image; default to sparrowx.png */
-  background-image: var(--hero-image, url('/images/sparrowx.png'));
+  z-index: 0;
+  /* Darken with subtle vertical wash, then paint hero or fallback image */
+  background-image:
+    linear-gradient(180deg, hsl(var(--background) / 0.85) 0%, hsl(var(--background) / 0.95) 75%, hsl(var(--background)) 100%),
+    var(--hero-image, url('/images/sparrowx.png'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: saturate(110%) contrast(95%) brightness(75%);
+  filter: saturate(1.1) contrast(0.95) brightness(0.85);
+  transition: background-image 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .hero-cathedral__overlay {
-  position: absolute; inset: 0;
-  background: radial-gradient( circle at 30% 20%, hsl(var(--primary) / 0.30), transparent 55%),
-              linear-gradient( to bottom, rgba(0,0,0,.55), rgba(0,0,0,.20) 40%, rgba(0,0,0,.55));
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 30% 20%, hsl(var(--primary) / 0.30), transparent 55%),
+    linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.20) 40%, rgba(0,0,0,.55));
 }
+
 .hero-cathedral__content {
   position: relative;
-  z-index: 1;
-  padding: 3.5rem 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3.5rem 1.5rem 2.5rem 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
   color: hsl(var(--foreground));
-  max-width: 720px;
 }
+
 .hero-cathedral__title {
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  margin: 0 0 .5rem;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
   background: var(--gradient-sacred);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-shadow: 0 2px 16px hsl(var(--primary) / 0.12);
 }
-.hero-cathedral__subtitle { margin: 0; opacity: .9; }
 
-.hero-cathedral__actions { margin-top: 1rem; display: flex; gap: .75rem; flex-wrap: wrap; }
+.hero-cathedral__subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+  text-shadow: 0 1px 8px hsl(var(--background) / 0.18);
+}
+
+.hero-cathedral__actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
 .hero-cathedral__actions .btn { box-shadow: var(--shadow-sacred); }
+
+@media (max-width: 600px) {
+  .hero-cathedral { min-height: 28vh; }
+  .hero-cathedral__content { padding: 2.2rem 0.5rem 1.2rem; }
+  .hero-cathedral__title { font-size: 2rem; }
+}
