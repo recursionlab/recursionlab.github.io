@@ -6,7 +6,7 @@ permalink: /
 ---
 
 
-<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero" style="--hero-image: url('/images/cathedral-hero.jpg');">
+<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero">
   <!-- If /images/cathedral-hero.jpg is missing, the second image will still render -->
   <div class="hero-cathedral__bg"></div>
   <div class="hero-cathedral__overlay"></div>
