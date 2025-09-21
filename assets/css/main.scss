@@ -42,6 +42,8 @@ sitemap:
   --border: 240 20% 18%;
   --input: 240 20% 15%;
   --ring: 262 65% 62%;
+  /* Gold accent for iconography */
+  --gold: 45 86% 58%;
 
   /* Sacred geometry gradients */
   --gradient-cathedral: linear-gradient(135deg, hsl(240 15% 8%), hsl(240 20% 12%));
@@ -301,7 +303,7 @@ nav .pagination li a.current {
 }
 
 /* hero icon & pills */
-.hero-cathedral__icon { color: hsl(var(--accent)); opacity: 0.9; margin-bottom: 0.75rem; filter: drop-shadow(0 2px 8px hsl(var(--accent) / 0.25)); }
+.hero-cathedral__icon { color: hsl(var(--gold)); opacity: 0.95; margin-bottom: 0.75rem; filter: drop-shadow(0 2px 10px hsl(var(--gold) / 0.35)); }
 
 .hero-cathedral__pills { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem; }
 .pill { display: inline-flex; align-items: center; gap: .4rem; padding: .45rem .7rem; border-radius: 999px; font-size: .85rem; line-height: 1; color: hsl(var(--foreground)); background: hsl(var(--secondary) / 0.65); border: 1px solid hsl(var(--border)); box-shadow: 0 1px 3px hsl(0 0% 0% / .2) inset, 0 6px 20px hsl(0 0% 0% / .15); }
@@ -311,6 +313,18 @@ nav .pagination li a.current {
 .btn.btn--sacred:hover { filter: brightness(1.05); }
 .btn.btn--ghost { background: hsl(var(--secondary) / 0.65); color: hsl(var(--foreground)) !important; border: 1px solid hsl(var(--border)) !important; }
 .btn.btn--ghost:hover { background: hsl(var(--secondary) / 0.8); }
+
+/* Make hero CTAs pill-shaped and slightly larger */
+.hero-cathedral__actions .btn { border-radius: 999px !important; padding: 0.75rem 1.25rem; }
+
+/* Section heading gradient like the reference */
+.page > h2 { 
+  font-weight: 800; letter-spacing: -0.015em; 
+  background: var(--gradient-sacred); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* Subtle width limit for hero subtitle */
+.hero-cathedral__subtitle { max-width: 820px; }
 
 .hero-cathedral__title {
   font-size: clamp(2.2rem, 6vw, 3.6rem);
