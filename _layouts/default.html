@@ -21,7 +21,7 @@
 
     <!-- For all browsers -->
     <!--  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Heebo:100,300,400,500,700,800,900" rel="stylesheet">  -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
     <meta http-equiv="cleartype" content="on">
     
