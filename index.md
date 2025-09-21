@@ -6,13 +6,31 @@ permalink: /
 ---
 
 
-<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero" style="--hero-image: url('/images/Eye of the Cosmos.png');">
-  <!-- Tip: swap to /images/cathedral-hero.jpg once added; fallback remains sparrowx.png in CSS -->
+<div class="hero-cathedral animate-fade-in" aria-label="Cathedral of reasoning hero" style="--hero-image: url('/images/cathedral-hero.jpg'), url('/images/Eye of the Cosmos.png');">
+  <!-- If /images/cathedral-hero.jpg is missing, the second image will still render -->
   <div class="hero-cathedral__bg"></div>
   <div class="hero-cathedral__overlay"></div>
   <div class="hero-cathedral__content">
-    <h1 class="hero-cathedral__title">Recursion Lab</h1>
-    <p class="hero-cathedral__subtitle">Public notes and working prototypes about recursion, cognition, and systems.</p>
+    <div class="hero-cathedral__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor" role="presentation" focusable="false">
+        <!-- simple brain glyph -->
+        <path d="M9 3a3 3 0 0 0-3 3v.5A3.5 3.5 0 0 0 2.5 10c0 1.3.7 2.4 1.7 3A3.49 3.49 0 0 0 7 16.5V17a3 3 0 0 0 6 0v-6a3 3 0 0 0-3-3h-.5A1.5 1.5 0 0 1 8 6.5V6a3 3 0 0 0-3-3zm6 0a3 3 0 0 1 3 3v.5A3.5 3.5 0 0 1 21.5 10c0 1.3-.7 2.4-1.7 3a3.49 3.49 0 0 1-2.8 3.5V17a3 3 0 1 1-6 0v-6a3 3 0 0 1 3-3h.5A1.5 1.5 0 0 0 16 6.5V6a3 3 0 0 1-1-3z"/>
+      </svg>
+    </div>
+    <h1 class="hero-cathedral__title">Cathedral of Reasoning</h1>
+    <p class="hero-cathedral__subtitle">A recursive knowledge synthesis system that self-documents its own construction while growing from foundational texts into emergent intelligence.</p>
+
+    <div class="hero-cathedral__pills">
+      <span class="pill">Document Vectorization</span>
+      <span class="pill">Semantic Clustering</span>
+      <span class="pill">Gap Analysis</span>
+      <span class="pill">Recursive Growth</span>
+    </div>
+
+    <div class="hero-cathedral__actions">
+      <a href="/blog/" class="btn btn--sacred">Begin Construction</a>
+      <a href="/about/" class="btn btn--ghost">Explore Architecture</a>
+    </div>
   </div>
 </div>
 
